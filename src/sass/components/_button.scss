@@ -1,0 +1,30 @@
+.btn {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms;
+
+  &.btn-primary {
+    background-color: rgb(var(--tenter-primary-color));
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: rgba(var(--tenter-primary-color), 0.9);
+    }
+  }
+
+  &.btn-outline {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 2px rgb(229, 225, 218);
+  }
+
+  &.btn-small {
+    padding: 0.8rem 0.5rem;
+  }
+}

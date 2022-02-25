@@ -1,0 +1,12 @@
+{
+  "name": "tenter",
+  "version": "1.0.0",
+  "description": "Programming made easier",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch --no-source-map src/sass/main.scss assets/style.css",
+    "sass:build": "sass --no-source-map src/sass/main.scss assets/style.css"
+  },
+  "author": "Emin Aliyev",
+  "license": "ISC"
+}
