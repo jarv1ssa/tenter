@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Tenter - Programming made easier</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <img src="/assets/logo.png" alt="Tenter logo" class="header__logo" />
+
+        <button class="btn btn-small header__menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="header__right">
+          <button class="btn btn-small">
+            <i class="fa-regular fa-message"></i>
+          </button>
+
+          <button class="btn btn-small">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+
+          <button class="btn btn-small searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <div class="icon-input header__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <div class="search-mobile">
+            <i class="fa-solid fa-left-long" id="closeMobileSearch"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <button class="btn btn-small">
+            <i class="fa-regular fa-user"></i>
+          </button>
+        </div>
+      </header>
+
+      <aside class="aside"></aside>
+    </div>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

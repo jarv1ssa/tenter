@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Tenter - Programming made easier</title>
+  </head>
+  <body>
+    <div class="auth">
+      <div class="auth__left">
+        <form class="auth__form complete__form">
+          <h2>Complete your profile...</h2>
+
+          <div class="auth__form-control">
+            <label for="firstName"
+              >First name <span style="color: red">*</span></label
+            >
+            <input type="text" />
+          </div>
+
+          <div class="auth__form-control">
+            <label for="lastName"
+              >Last name <span style="color: red">*</span></label
+            >
+            <input type="text" />
+          </div>
+
+          <div class="auth__form-control">
+            <label for="companySchool"
+              >Company/School <span style="color: red">*</span></label
+            >
+            <input type="text" required />
+          </div>
+
+          <div class="auth__form-control">
+            <label for="nickname"
+              >Nickname <span style="color: red">*</span></label
+            >
+            <input type="text" required />
+          </div>
+
+          <div class="auth__form-control">
+            <label for="telephone">Telephone</label>
+
+            <div>
+              <span>+994</span>
+              <input type="tel" required />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit">Continue</button>
+        </form>
+      </div>
+
+      <div class="auth__right"></div>
+    </div>
+  </body>
+</html>

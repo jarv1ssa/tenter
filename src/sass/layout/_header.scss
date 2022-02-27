@@ -1,0 +1,83 @@
+@use "../abstracts" as *;
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(var(--tenter-border-color));
+
+  &__logo {
+    height: clamp(1rem, 2rem, 3rem);
+
+    @include mdAndDown {
+      display: none;
+    }
+  }
+
+  &__menu {
+    color: rgb(var(--tenter-primary-color));
+
+    @include mdAndUp {
+      display: none;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+
+    button {
+      color: rgb(var(--tenter-primary-color));
+    }
+
+    .searchBtn {
+      @include mdAndUp {
+        display: none;
+      }
+    }
+  }
+
+  &__search {
+    padding: 0.5rem;
+    box-shadow: inset 0 0 0 2px rgb(var(--tenter-border-color));
+    border-radius: 4px;
+
+    i {
+      color: rgb(var(--tenter-primary-color));
+    }
+
+    input {
+      margin-left: 4px;
+      border: none;
+      outline: none;
+    }
+
+    @include mdAndDown {
+      display: none;
+    }
+  }
+
+  .search-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    background-color: #fff;
+    color: rgb(var(--tenter-primary-color));
+
+    input {
+      flex-grow: 1;
+      margin-left: 1rem;
+      border: none;
+      outline: none;
+      align-self: stretch;
+    }
+  }
+}
