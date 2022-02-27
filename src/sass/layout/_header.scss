@@ -4,13 +4,14 @@
   position: relative;
   display: flex;
   align-items: center;
+  grid-area: header;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgb(var(--tenter-border-color));
 
   &__logo {
     height: clamp(1rem, 2rem, 3rem);
 
-    @include mdAndDown {
+    @include lgAndDown {
       display: none;
     }
   }
@@ -18,7 +19,7 @@
   &__menu {
     color: rgb(var(--tenter-primary-color));
 
-    @include mdAndUp {
+    @include lgAndUp {
       display: none;
     }
   }
