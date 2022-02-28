@@ -31,7 +31,9 @@
         margin-left: 0.5rem;
       }
 
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active {
         background-color: rgb(var(--tenter-primary-color));
         color: #fff;
       }

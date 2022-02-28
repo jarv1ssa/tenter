@@ -139,7 +139,7 @@ html {
 .aside .nav a span {
   margin-left: 0.5rem;
 }
-.aside .nav a:hover {
+.aside .nav a:hover, .aside .nav a:focus, .aside .nav a:active {
   background-color: rgb(var(--tenter-primary-color));
   color: #fff;
 }
@@ -399,6 +399,7 @@ html {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin: 1rem auto;
+  text-align: center;
 }
 .leaderboard .winners .winner {
   display: flex;
@@ -475,6 +476,19 @@ html {
 .leaderboard .rest-winners .rest-winner .xp {
   margin-left: auto;
 }
+.leaderboard__types {
+  list-style-type: none;
+}
+.leaderboard__types li {
+  padding: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.leaderboard__types li:hover {
+  background-color: rgb(var(--tenter-primary-color));
+  color: #fff;
+}
 
 .btn {
   padding: 0.8rem;
@@ -512,4 +526,10 @@ html {
   inset: 0;
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hr {
+  margin: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid rgb(var(--tenter-border-color));
 }
