@@ -19,6 +19,7 @@ html {
   grid-template-areas:
     "header header"
     "aside main";
+  color: rgb(var(--tenter-primary-color));
 
   @include lgAndDown {
     grid-template-areas:
