@@ -1,0 +1,37 @@
+.code {
+  padding: 1rem 2rem;
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &--lang {
+      font-size: 1.2rem;
+    }
+
+    &--xp {
+      background-color: rgb(var(--tenter-primary-color));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 4px;
+      border-radius: 4px;
+    }
+  }
+
+  &__control {
+    border: 1px solid rgb(var(--tenter-border-color));
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+
+    button {
+      border-radius: 4px;
+    }
+  }
+}

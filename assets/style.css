@@ -308,6 +308,91 @@ html {
   }
 }
 
+.code {
+  padding: 1rem 2rem;
+}
+.code__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.code__details--lang {
+  font-size: 1.2rem;
+}
+.code__details--xp {
+  background-color: rgb(var(--tenter-primary-color));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 4px;
+}
+.code__control {
+  border: 1px solid rgb(var(--tenter-border-color));
+}
+.code__submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.code__submit button {
+  border-radius: 4px;
+}
+
+.annotation {
+  padding: 1rem 2rem;
+}
+.annotation__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.annotation__details--welcome {
+  font-size: 1.5rem;
+}
+.annotation__details--progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid rgb(var(--tenter-primary-color));
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .annotation__details {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.annotation__main div {
+  height: 250px;
+  border: 1px solid rgb(var(--tenter-border-color));
+  border-radius: 8px;
+}
+.annotation__main div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.annotation__status {
+  padding: 0 1rem;
+}
+.annotation__status ul {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+.annotation__status ul li {
+  font-size: 1.2rem;
+}
+.annotation__status ul li input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 4px;
+}
+.annotation__status ul li :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .leaderboard .countdown {
   padding: 1rem 1rem 2rem;
   text-align: center;
@@ -510,7 +595,10 @@ html {
 .btn.btn-outline {
   background-color: #fff;
   color: rgb(var(--tenter-primary-color));
-  box-shadow: inset 0 0 0 2px #e5e1da;
+  box-shadow: inset 0 0 0 2px rgb(var(--tenter-border-color));
+}
+.btn.btn-outline:hover, .btn.btn-outline:focus, .btn.btn-outline:active {
+  box-shadow: inset 0 0 0 2px rgb(var(--tenter-primary-color));
 }
 .btn.btn-small {
   padding: 0.8rem 0.5rem;

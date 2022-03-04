@@ -56,17 +56,17 @@
         <img src="/assets/logo.png" alt="Tenter logo" />
 
         <nav class="nav">
-          <a href="/code">
+          <a href="/app/code">
             <i class="fa-solid fa-code"></i>
             <span>Code</span>
           </a>
 
-          <a href="/annotation">
+          <a href="/app/annotation">
             <i class="fa-solid fa-pen-fancy"></i>
             <span>Annotation</span>
           </a>
 
-          <a href="/">
+          <a href="/app">
             <i class="fa-solid fa-trophy"></i>
             <span>Leaderboard</span>
           </a>
@@ -214,5 +214,25 @@
 
     <script src="/assets/easytimer.min.js"></script>
     <script src="/assets/script.js"></script>
+
+    <script>
+      const timer = new easytimer.Timer();
+      const days = document.querySelector("#days");
+      const hours = document.querySelector("#hours");
+      const minutes = document.querySelector("#minutes");
+      const seconds = document.querySelector("#seconds");
+
+      timer.start({
+        countdown: true,
+        startValues: { days: 1, hours: 4, minutes: 51, seconds: 1 },
+      });
+
+      timer.addEventListener("secondsUpdated", () => {
+        days.innerText = timer.getTimeValues().days;
+        hours.innerText = timer.getTimeValues().hours;
+        minutes.innerText = timer.getTimeValues().minutes;
+        seconds.innerText = timer.getTimeValues().seconds;
+      });
+    </script>
   </body>
 </html>

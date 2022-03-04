@@ -22,7 +22,13 @@
   &.btn-outline {
     background-color: #fff;
     color: rgb(var(--tenter-primary-color));
-    box-shadow: inset 0 0 0 2px rgb(229, 225, 218);
+    box-shadow: inset 0 0 0 2px rgb(var(--tenter-border-color));
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: inset 0 0 0 2px rgb(var(--tenter-primary-color));
+    }
   }
 
   &.btn-small {

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Tenter - Programming made easier</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <img src="/assets/logo.png" alt="Tenter logo" class="header__logo" />
+
+        <button class="btn btn-small header__menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="header__right">
+          <button class="btn btn-small">
+            <i class="fa-regular fa-message"></i>
+          </button>
+
+          <button class="btn btn-small">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+
+          <button class="btn btn-small searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <div class="icon-input header__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <div class="search-mobile">
+            <i class="fa-solid fa-left-long" id="closeMobileSearch"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <button class="btn btn-small">
+            <i class="fa-regular fa-user"></i>
+          </button>
+        </div>
+      </header>
+
+      <aside class="aside">
+        <img src="/assets/logo.png" alt="Tenter logo" />
+
+        <nav class="nav">
+          <a href="/app/code">
+            <i class="fa-solid fa-code"></i>
+            <span>Code</span>
+          </a>
+
+          <a href="/app/annotation">
+            <i class="fa-solid fa-pen-fancy"></i>
+            <span>Annotation</span>
+          </a>
+
+          <a href="/app">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Leaderboard</span>
+          </a>
+        </nav>
+
+        <hr class="hr" />
+
+        <div class="annotation__status">
+          <h3>Status</h3>
+
+          <ul>
+            <li>
+              <input type="checkbox" name="solved" id="solved" />
+              <label for="solved">Solved</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="unsolved" id="unsolved" />
+              <label for="unsolved">Unsolved</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="inprogress" id="inprogress" />
+              <label for="inprogress">In progress</label>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main annotation">
+        <div class="annotation__details">
+          <span class="annotation__details--welcome"
+            >Welcome back, <span style="font-weight: bold">Bob</span></span
+          >
+          <div class="annotation__details--progress">
+            <label for="progress">Daily Goal</label>
+            <progress id="progress" value="31" max="100"></progress>
+            <span>0/110 XP</span>
+          </div>
+        </div>
+
+        <div class="annotation__main">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </main>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

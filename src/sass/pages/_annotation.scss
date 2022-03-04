@@ -1,0 +1,65 @@
+@use "../abstracts" as *;
+
+.annotation {
+  padding: 1rem 2rem;
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &--welcome {
+      font-size: 1.5rem;
+    }
+
+    &--progress {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      border: 2px solid rgb(var(--tenter-primary-color));
+      border-radius: 8px;
+    }
+
+    @include mdAndDown {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__main {
+    div {
+      height: 250px;
+      border: 1px solid rgb(var(--tenter-border-color));
+      border-radius: 8px;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__status {
+    padding: 0 1rem;
+
+    ul {
+      list-style-type: none;
+      margin-top: 0.5rem;
+
+      li {
+        font-size: 1.2rem;
+
+        input {
+          width: 1rem;
+          height: 1rem;
+          margin-right: 4px;
+        }
+
+        :not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
