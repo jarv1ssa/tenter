@@ -4,10 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/assets/style.css" />
     <title>Document</title>
   </head>
   <body>
-    Hi there
+    <div class="home">
+      <header>
+        <img src="/assets/logo.png" alt="Tenter logo" class="header__logo" />
+
+        <button class="btn btn-small header__menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav">
+          <a href="/" class="btn btn-outline btn-large"> Home </a>
+
+          <a href="/about" class="btn btn-outline btn-large"> About </a>
+        </nav>
+      </header>
+
+      <aside>
+        <img src="/assets/logo.png" alt="Tenter logo" />
+
+        <nav class="nav">
+          <a href="/"> Home </a>
+
+          <a href="/about"> About </a>
+        </nav>
+      </aside>
+
+      <main>
+        <h1>Programming made easier</h1>
+
+        <a href="/auth" class="btn btn-outline btn-large">Contribute</a>
+      </main>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="/assets/script.js"></script>
   </body>
 </html>

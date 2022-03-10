@@ -5,7 +5,7 @@ const searchBtn = document.querySelector(".searchBtn");
 const closeMobileSearch = document.querySelector("#closeMobileSearch");
 
 const headerMenu = document.querySelector(".header__menu");
-const aside = document.querySelector(".aside");
+const aside = document.querySelector("aside");
 
 const overlay = document.querySelector(".overlay");
 
@@ -17,12 +17,12 @@ iconInputs.forEach((parent) => {
   });
 });
 
-searchBtn.addEventListener("click", () => {
+searchBtn?.addEventListener("click", () => {
   searchMobile.style.display = "flex";
   searchMobile.children[1].focus();
 });
 
-closeMobileSearch.addEventListener("click", () => {
+closeMobileSearch?.addEventListener("click", () => {
   searchMobile.style.display = "none";
 });
 
